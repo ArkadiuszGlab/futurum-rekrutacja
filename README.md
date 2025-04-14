@@ -9,6 +9,7 @@ in terminal write:
 
 ```
 cd .\futurum-rekrutacja\
+npm i
 npm start
 ```
 
