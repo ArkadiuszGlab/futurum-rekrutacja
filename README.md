@@ -35,9 +35,10 @@ A brief overview of the project files/folders to help developers understand the 
 ```
 futurum-rekrutacja/
 ├── src/
-│   ├── app/
-│   ├── assets/
-│   └── services/
+│   ├── components/
+│   ├── models/
+│   ├── services/
+    └── app
 ├── db.json
 ├── package.json
 ├── README.md
