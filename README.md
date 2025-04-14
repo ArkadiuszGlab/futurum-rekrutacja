@@ -47,7 +47,7 @@ futurum-rekrutacja/
 # Technologies Used
 
 ```
-Frontend: Angular, TypeScript, Bootstrap
+Frontend: Angular, TypeScript
 Backend: JSON Server
 Style: Vanilla CSS
 ```
