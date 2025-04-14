@@ -1,0 +1,38 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 90%;
+  max-width: 100%;
+  margin: 1rem auto;
+  background-color: var(--bg-white);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.content > button {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.875rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  width: calc(100% - 2rem);
+  margin: 1rem auto;
+  display: block;
+}
+
+.content > button:hover {
+  background-color: var(--secondary-dark);
+}
