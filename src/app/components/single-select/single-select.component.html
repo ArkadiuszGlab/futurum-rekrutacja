@@ -1,0 +1,22 @@
+<div class="select-container">
+  <div class="select-box" (click)="toggleDropdown()">
+    <div class="selected-option">
+      <span *ngIf="!selectedOption">Select an option...</span>
+      <span *ngIf="selectedOption">
+        {{ getSelectedOptionLabel() }}
+      </span>
+    </div>
+    <div class="arrow-down">▼</div>
+  </div>
+
+  <div class="options-list" *ngIf="isOpen">
+    <div
+      class="option"
+      *ngFor="let option of options"
+      [class.selected]="option.value === selectedOption"
+      (click)="selectOption(option.value)"
+    >
+      {{ option.label }}
+    </div>
+  </div>
+</div>

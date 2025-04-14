@@ -1,0 +1,80 @@
+.select-container,
+.multi-select-container {
+  position: relative;
+  width: 100%;
+}
+
+.select-box {
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--bg-white);
+  transition: var(--transition);
+}
+
+.select-box:hover {
+  border-color: var(--primary-light);
+}
+
+.selected-option,
+.selected-options {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-dark);
+  font-size: 0.875rem;
+}
+
+.arrow-down {
+  font-size: 0.75rem;
+  color: var(--text-medium);
+  transition: var(--transition);
+}
+
+.options-list {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  z-index: 10;
+  max-height: 15rem;
+  overflow-y: auto;
+  animation: fadeIn 0.2s;
+}
+
+.option {
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.875rem;
+}
+
+.option:hover,
+.option.selected {
+  background-color: #f8fafc;
+}
+
+.select-all {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.option label,
+.select-all label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+}
