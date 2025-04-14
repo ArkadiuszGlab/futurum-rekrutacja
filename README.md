@@ -30,7 +30,7 @@ If you choose other port you need to change apiUrl(campaigns.service.ts line 11)
 
 # Project Structure
 
-A brief overview of the project files/folders to help developers understand the structure. For example:
+A brief overview of the project files/folders.
 
 ```
 futurum-rekrutacja/
