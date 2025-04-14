@@ -1,0 +1,85 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  table-layout: auto;
+}
+
+th {
+  background-color: #f8fafc;
+  color: var(--text-dark);
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+td {
+  padding: 1rem;
+  color: var(--text-medium);
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: #f8fafc;
+}
+
+td span {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #2563eb;
+  padding: 0.25rem 0.5rem;
+  margin: 0.125rem;
+  border-radius: var(--border-radius);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+td div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+td button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  min-width: 5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  white-space: nowrap;
+}
+
+td button:first-of-type {
+  background-color: var(--primary);
+  color: white;
+}
+
+td button:first-of-type:hover {
+  background-color: var(--primary-dark);
+}
+
+td button:last-of-type {
+  background-color: var(--danger);
+  color: white;
+}
+
+td button:last-of-type:hover {
+  background-color: var(--danger-dark);
+}
+
+table tr td:nth-child(5) {
+  color: #16a34a;
+  font-weight: 600;
+}

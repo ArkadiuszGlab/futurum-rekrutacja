@@ -1,0 +1,33 @@
+<table>
+  <tr>
+    <th>Campaign name</th>
+    <th>Keywords</th>
+    <th>Bid amount</th>
+    <th>Campaign fund</th>
+    <th>Status</th>
+    <th>Town</th>
+    <th>Radius</th>
+    <th>Actions</th>
+  </tr>
+  @if(campaigns.length > 0){ @for (campaign of campaigns; track campaign.id) {
+  <tr>
+    <td>{{ campaign.name }}</td>
+    <td>
+      @for(keyword of campaign.keywords; track keyword){
+      <span>{{ keyword }} </span>
+      }
+    </td>
+    <td>{{ campaign.bidAmount }}</td>
+    <td>{{ campaign.campaignFund }}</td>
+    <td>{{ campaign.status ? "on" : "off" }}</td>
+    <td>{{ campaign.town }}</td>
+    <td>{{ campaign.radius }}</td>
+    <td>
+      <div>
+        <button (click)="editCampaign(campaign.id)">Edit</button>
+        <button (click)="deleteCampaign(campaign.id)">Delete</button>
+      </div>
+    </td>
+  </tr>
+  } }
+</table>
