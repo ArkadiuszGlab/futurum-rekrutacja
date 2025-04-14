@@ -2,9 +2,8 @@
   "campaigns": [
     {
       "id": "str123",
-      "name": "camp 13000",
+      "name": "camp 1",
       "keywords": [
-        "discount",
         "sale",
         "new arrival",
         "limited edition",
@@ -47,20 +46,8 @@
       "radius": 20
     },
     {
-      "id": "d9d5dbc0-7361-4741-9be4-3266969cff5b",
-      "name": "Kampania Oli",
-      "keywords": [
-        "limited edition"
-      ],
-      "bidAmount": 50000000,
-      "campaignFund": 500000000,
-      "status": true,
-      "town": "Kraków",
-      "radius": 20
-    },
-    {
       "id": "3ba2",
-      "name": "fajna kampania",
+      "name": "camp 5",
       "keywords": [
         "discount",
         "sale",
