@@ -1,0 +1,54 @@
+<form [formGroup]="campaignForm" (ngSubmit)="handleSubmit()">
+  <label for="name">
+    Campaign name:
+    <input formControlName="name" type="text" />
+  </label>
+  <label for="keywords">
+    Keywords:
+    <app-multi-select
+      [options]="keywords"
+      [(selectedOptions)]="selectedKeywords"
+      (selectedOptionsChange)="updateKeywords($event)"
+    >
+    </app-multi-select>
+  </label>
+  <label for="bidAmount">
+    Bid amount:
+    <input
+      formControlName="bidAmount"
+      type="number"
+      (input)="
+        bidChanged(
+          this.campaignForm.value.bidAmount
+            ? this.campaignForm.value.bidAmount
+            : 0
+        )
+      "
+    />
+  </label>
+  <label for="campaignFund">
+    Campaign fund:
+    <input formControlName="campaignFund" type="number" />
+  </label>
+
+  <label for="status">
+    <div class="status-row">
+      Status:
+      <input type="checkbox" id="status" formControlName="status" />
+
+      <span>{{ campaignForm.get("status")?.value ? "on" : "off" }}</span>
+    </div>
+  </label>
+  <label for="towns">
+    Town:
+    <app-single-select [options]="towns" formControlName="town">
+    </app-single-select>
+  </label>
+  <label for="radius">
+    Radius:
+    <input formControlName="radius" type="number" />
+  </label>
+  <button class="submit-btn" type="submit" [disabled]="!campaignForm.valid">
+    {{ isEdit ? "Edit campaign" : "Add campaign" }}
+  </button>
+</form>
