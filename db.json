@@ -1,0 +1,78 @@
+{
+  "campaigns": [
+    {
+      "id": "str123",
+      "name": "camp 13000",
+      "keywords": [
+        "discount",
+        "sale",
+        "new arrival",
+        "limited edition",
+        "exclusive"
+      ],
+      "bidAmount": 500000,
+      "campaignFund": 5000000,
+      "status": false,
+      "town": "Warsaw",
+      "radius": 20
+    },
+    {
+      "id": "str125",
+      "name": "camp 3",
+      "keywords": [
+        "clothes",
+        "fashion",
+        "design"
+      ],
+      "bidAmount": 2500,
+      "campaignFund": 500,
+      "status": true,
+      "town": "Łódź",
+      "radius": 20
+    },
+    {
+      "id": "8819d1e5-ea50-4d66-8db3-6181f27f34ea",
+      "name": "camp 4",
+      "keywords": [
+        "discount",
+        "sale",
+        "new arrival",
+        "limited edition",
+        "exclusive"
+      ],
+      "bidAmount": 5000,
+      "campaignFund": 50000,
+      "status": true,
+      "town": "Kraków",
+      "radius": 20
+    },
+    {
+      "id": "d9d5dbc0-7361-4741-9be4-3266969cff5b",
+      "name": "Kampania Oli",
+      "keywords": [
+        "limited edition"
+      ],
+      "bidAmount": 50000000,
+      "campaignFund": 500000000,
+      "status": true,
+      "town": "Kraków",
+      "radius": 20
+    },
+    {
+      "id": "3ba2",
+      "name": "fajna kampania",
+      "keywords": [
+        "discount",
+        "sale",
+        "new arrival",
+        "limited edition",
+        "exclusive"
+      ],
+      "bidAmount": 500,
+      "campaignFund": 5000,
+      "status": true,
+      "town": "Warsaw",
+      "radius": 20
+    }
+  ]
+}
