@@ -18,9 +18,10 @@ npm install
 npm start
 ```
 
-To run the backend, you need to install json-server. In a separate terminal window, write:
+To run the backend, you need to install json-server. Make sure you are in the same folder as db.json. In a separate terminal window, write:
 
 ```
+cd .\futurum-rekrutacja\
 npm install -g json-server
 json-server --watch db.json --port 3001
 ```
