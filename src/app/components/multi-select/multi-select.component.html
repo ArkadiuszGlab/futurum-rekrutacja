@@ -1,0 +1,34 @@
+<div class="multi-select-container">
+  <div class="select-box" (click)="toggleDropdown()">
+    <div class="selected-options">
+      <span *ngIf="selectedOptions.length === 0">Select options...</span>
+      <span *ngIf="selectedOptions.length > 0">
+        {{ getSelectedLabels() }}
+      </span>
+    </div>
+    <div class="arrow-down">▼</div>
+  </div>
+
+  <div class="options-list" *ngIf="isOpen">
+    <div class="select-all">
+      <label>
+        <input
+          type="checkbox"
+          [checked]="allSelected"
+          (change)="toggleSelectAll()"
+        />
+        Select All
+      </label>
+    </div>
+    <div class="option" *ngFor="let option of options">
+      <label>
+        <input
+          type="checkbox"
+          [checked]="isSelected(option.value)"
+          (change)="toggleOption(option.value)"
+        />
+        {{ option.label }}
+      </label>
+    </div>
+  </div>
+</div>
