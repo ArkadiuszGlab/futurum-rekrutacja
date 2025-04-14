@@ -4,6 +4,12 @@ This project was made as a test recruitment exercise for Futurum Technology.
 
 ## Development server
 
+This project needs at least Node.js version v18.19
+
+```
+https://nodejs.org/en
+```
+
 Clone this repo and then in the terminal, write:
 
 ```
